@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class depositCalculator {
+public class DepositCalculator {
     double calculateComplexPercentFunction(double amount, double yearRate, int period) {
         double pay = amount * Math.pow((1 + yearRate / 12), 12 * period);
         return getResult(pay, 2);
@@ -38,7 +38,7 @@ public class depositCalculator {
     }
 
     public static void main(String[] args) {
-        new depositCalculator().doImportantJob();
+        new DepositCalculator().doImportantJob();
     }
 
 
